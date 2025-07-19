@@ -1,0 +1,19 @@
+@media screen  and (max-width:754px){
+  body{
+    
+  }
+nav{
+    background-size: 23vw;
+}
+
+nav input{
+    width: 29vw;
+  height: 23px;
+  border-radius: 5px;
+}
+.cards{
+    overflow:auto;
+}
+
+ 
+}

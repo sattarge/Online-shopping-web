@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --main-bg-color: rgb(231, 104, 6);
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color:var(--main-bg-color);
+    top: 0px;
+     left: 0;
+      width: 100%;
+      color: white;
+      z-index: 1000;
+      height: 97px;
+      font-family: "Lato", sans-serif;
+      font-weight:bold;
+    
+}
+.logo{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+nav img{
+    padding: px;
+}
+.search-box {
+      position: relative;
+      width: 232px;
+    }
+    .search-box input[type="text"] {
+      width: 100%;
+      padding: 10px 10px 10px 35px; /* left padding for icon */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  .search-box i {
+      position:absolute ;
+      top: 50%;
+      left: 9px;
+      transform: translateY(-50%);
+      color: #110101;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    nav input{
+        padding: 2px 22px;
+    }
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+list-style: none;
+padding: 0px 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(252, 251, 255);
+    margin: 3px;
+}
+nav ul li a:hover{
+    color: rgb(20, 16, 20);
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',    
+}
+.cart{
+    background-color: rgb(244, 249, 249);
+    margin: 23px;
+    border-radius: 9px;
+    border: solid;
+    box-shadow: 0px 1px 20px 1px;
+    overflow: auto;
+   
+}
+.cart-item{
+    display:flex;
+  justify-content:center;
+  margin:0px 12px;
+ 
+}
+.cards{
+  display: flex;         /* Flexbox activate */
+  flex-direction: row;   /* Row direction set */
+  gap: 19px;
+  overflow: auto; 
+}
+.item-price{
+    color: rgb(125, 18, 219);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.item-name{
+    color: black;
+    font-weight: initial;
+    width: 0px 15px;
+}
+.item-actions button{
+    background-color:var(--main-bg-color);
+    color: white;
+    box-shadow: 2px 5px px 5px;
+    border: solid black ;
+    border-radius: 5px;
+    margin: 7px;
+}
+.item-actions button:hover{
+    color: aliceblue;
+    font-size: bold;
+    cursor: pointer;
+    background-color: rgb(40, 2, 9);
+}
+.main-container{
+min-height: calc(100vh - 58px - 12vh);
+} 
+footer{
+    background-color: var(--main-bg-color);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
